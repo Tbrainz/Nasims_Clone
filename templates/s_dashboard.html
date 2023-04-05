@@ -1,0 +1,206 @@
+{% extends 'layout.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>Document</title>{% endblock %}
+</head>
+<body>
+    {% block content %}
+   
+   
+    <div class="container-fluid" style="margin-top:150px">
+        {% for message in messages %}
+            {% if message %}
+                <div class="alert alert-success">
+                <p class="text-success">{{message}}</p> 
+                </div>
+            {% endif %}
+        {% endfor %}
+        <div class="links">
+            <a href="{% url 'account:new_profile' request.user.profile.id %}">Edit</a> <br />
+        </div>
+        <!-- first-partition -->
+        <div>
+            <h1>Personal Details</h1>
+
+            <div class="d-flex flex-column-reverse flex-md-row mt-4">
+                
+                <div class="card card-body border-primary mx-auto col-10 col-md-9">
+                   <div>
+                        <span>Surname</span>
+                        <h4>{{request.user.username}}</h4>
+                    </div>
+                    <div>
+                        <span>Other Names</span>
+                        <h4>{{request.user.profile.other_names}}</h4>
+                    </div>
+                </div>
+                <div class="border-success text-center col-10 col-md-3">
+                    <img src="{{request.user.profile.profile_pics.url}}" class="rounded-circle" height="100" width="100" alt="profile.png">
+                    <h3>{{request.user.profile.other_names}}</h3>
+                    <p class="text-secondary">
+                        <strong>{{request.user.email}}</strong>  </strong>
+                    </p>
+                    <strong>NPOWER/TECH/2023/2024</strong>
+                    <h5>
+                    <span class="badge rounded-pill bg-success">ShortListed</span>
+                    </h5>
+                    <strong>N-Power Batch C</strong>
+                </div>
+            </div>
+
+
+
+
+
+            <div>
+                <p>Surname</p>
+                <h3></h3>
+            </div>
+
+            <div>
+                <p>Other Names</p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>First Name</p>
+                <h3></h3>
+            </div>
+
+            <div>
+                <p>Date of Birth</p>
+                <h3></h3>
+            </div>
+
+            <div>
+                <p>Gender</p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>Phone Number</p>
+                <h3></h3>
+            </div>
+
+            <div>
+                <p>State of Origin</p>
+                <h3></h3>
+            </div>
+
+            <div>
+                <p>Local Govt of Origin</p>
+                <h3></h3>
+            </div>
+
+            <div>
+                <p>Scheme Name</p>
+                <h3></h3>
+            </div>
+
+            <div>
+                <p>Year of Application</p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>Residencial Address</p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>State of Residence</p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>LGA of Residence</p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>Highest Level of Education</p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>ID type</p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>ID Number</p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>ID Uploaded</p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>Bank Account </p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>BVN</p>
+                <h3></h3>
+            </div>
+
+
+            <div>
+                <p>Surname</p>
+                <h3></h3>
+            </div>
+
+        </div>
+
+        <!-- second-partition -->
+        <div></div>
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <p>Number: {{request.user.profile.phone_number}}</p>
+        <p>DOB: {{request.user.profile.date_of_birth}}</p>
+        <p>Gender: {{request.user.profile.gendre}}</p>
+        <p>State of Origin: {{request.user.profile.state_of_origin}}</p>
+        <p>LGA: {{request.user.profile.lga_origin}}</p>
+        <p>Scheme: {{request.user.profile.scheme_name}}</p>
+        <p>Year of Application: {{request.user.profile.year_of_application}}</p>
+        <p>Residential Address: {{request.user.profile.residential_address}}</p>
+        <p>State of Residence: {{request.user.profile.state_of_residence}}</p>
+        <p>Education: {{request.user.profile.highest_level_of_education}}</p>
+        <p>Id_type: {{request.user.profile.id_type}}</p>
+        <p>Id_img: {{request.user.profile.id_image}}</p>
+        <p>Bank Account: {{request.user.profile.bank_account_number}}</p>
+        <p>Account Name: {{request.user.profile.account_name}}</p>
+    </div>
+    {% endblock %}
+    
+</body>
+</html>

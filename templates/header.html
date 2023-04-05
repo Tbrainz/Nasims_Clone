@@ -1,0 +1,70 @@
+{% load static %}
+<!-- 
+<header>
+    <div class="header">
+        <div class="brand">
+            <h4>Federal Ministry of Humanitary Affiars,<br /> Disaster management and Social Development</h4>
+        </div>
+
+        
+        <nav class="nav">
+        <ul class="nav-list">
+            <li class="list-item"><a href="">Home</a></li>
+            <li class="list-item"><a href="">News</a></li>
+            <li class="list-item"><a href="">About</a></li>
+            <li class="list-item"><a href="">Contact</a></li>
+            <li class="list-item"><a href="{% url 'account:formview' %}">Register</a></li>
+            <li class="list-item">
+              
+                    <a href="/login" class="nav-link">
+                        <button class="login-button">Login</button>
+                    </a>
+             
+
+            </li>
+        </ul>
+    </nav>
+
+    <div class="dropdown-toggler-icon">
+            <button ><i class="bi bi-justify"></i></button>
+        </div>
+    </div>
+</header> -->
+
+<nav class="py-4 px-2 navbar border-bottom bg-white navbar-expand-lg navbar-light">
+    <a href="" class="navbar-brand d-block d-md-none">Logo</a>
+    <h5 class="d-none d-md-block">Federal Ministry of Humanitary Affiars,<br /> Disaster management and Social Development</h4>
+    </h5>
+
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navBarCollapse" aria-expanded="false" arial-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="d-flex navbar-nav align-items-center justify-content-center ms-auto">
+        {% if request.user.is_authenticated %}
+            <div class="w-75 text-center dropdown me-4"  >
+                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="{{request.user.profile.profile_pics.url}}"
+                 height="50" width="50"
+                class="rounded-circle" alt="profile.png">
+
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-left" style="margin-right:100px" aria-labelledby="dropdownToggle">
+                    <a href="" class="dropdown-item">Back to Dashboard</a>
+                    <a href="{% url 'account:logout' %}" class="dropdown-item">Sign Out</a>
+                </div>
+            </div>
+           
+            {% else %}
+            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="" class="nav-link">News</a></li>
+            <li class="nav-item"><a href="{% url 'account:login' %}" class="btn btn-success btn-lg py-md-2" style="width:10rem">Login</a></li>
+        {% endif %}
+        </ul>
+</div>
+</nav>

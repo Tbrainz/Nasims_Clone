@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head" style="text-align: center; color:green; font-weight: 600; margin:20px; font-size:25px;">
+        THE REGISTERED MEMBERS
+    </div>
+    <table border="1" style="width:80%; margin:auto; text-align: center; margin-top:30px">
+
+        <tr style="color:white; font-weight: 600; background-color: black; font-size:21px; padding:10px;">
+            <th>ID</th> <th>FNAME</th> <th>MNAME</th> <th>MATRIC NO</th> <th>DOB</th> <th>AGE</th>
+        </tr>
+
+        
+        {% for x in context %}
+        <tr style="background-color: rgba(161, 221, 161, 0.402); font-size:21px">
+            <td ><p>{{x.id}}</p></td>
+            <td><p>{{x.other_names}}</p></td>
+            <td><p>{{x.phone_number}}</p></td>
+            <td><p>{{x.state_of_origin}}</p></td>
+            <td><p>{{x.lga_origin}}</p></td>
+            <td><p>{{x.gendre}}</p></td> 
+            
+            
+        </tr>
+        {% endfor %}
+        
+    </table>
+    
+</body>
+</html>

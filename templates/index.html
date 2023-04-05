@@ -1,0 +1,386 @@
+{% extends 'layout.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>NASIMS-Home</title>{% endblock %}
+
+
+</head>
+<body>
+    {% block content %}
+    <!-- <div class="hero">
+        <div class="logo-brand">
+            <img src="../static/images/nasims-logo.webp" alt="logo.png" id="logo">
+        </div>
+
+        <div class="hero-adverts">
+           <h3>Please note</h3> 
+           <h2>Registration for N-Power Batch C is now Closed!</h2> 
+           <p>
+            The central management system for the Federal Ministry of Humanitarian Affairs,
+             Disaster Management and Social Development. <br />
+             <a href="">Read More</a>
+           </p>
+        </div>
+    </div>
+
+    <div class="hero-footer">
+        <p>
+        Read more about our response to the Covid-19 pandemic 
+        </p>
+        <a href="">here</a>
+
+    </div>
+
+    <div class="hero-2">
+        <div class="hero2-img">
+            <img src="../static/images/Group1.webp" alt="">
+        </div>
+
+        <div class="hero2-text">
+            <h2>Welcome to the National Social
+                 Investment Management System (NASIMS) </h2>
+            <p>
+            The Federal Ministry of Humanitarian Affairs,
+             Disaster Management and Social Development was 
+             established on Wednesday August 21st, 2019 by an Executive
+              pronouncement by the President and Commander in Chief of
+               the Armed Forces of Nigeria, H.E., Muhammadu Buhari GCFR
+                at the inauguration of Ministers for the Federal Republic 
+                of Nigeria. Under My leadership as Minister, the Ministry 
+                will position itself in light of the prevailing Humanitarian 
+                situation in the country through its Vision, Mission and Core
+                 values to promote Human dignity and Integration of basic Humane 
+                 benevolence and compassion in the treatment of all Nigerians
+                </p>
+                <span>Sadiya Umar Farouq
+                    <br />
+                Honorable Minister 
+                </span>
+
+        </div>
+    </div>
+
+    
+    <div class="hero-3">
+
+        <div class="hero3-text">
+            <p>About Us</p>
+            <h2>Providing efficient, effective,
+                 and coordinated humanitarian response to Nigerians. 
+                 </h2>
+            <p>
+                The National Social Investment Program of Nigeria
+                is a social welfare initiative created by the 
+                Federal government of Nigeria in 2015 under the 
+                direction of the National Social Investment 
+                Office. The Program was created to ensure a more
+                 equitable distribution of resources to vulnerable
+                  populations, including children, youth, and
+                  
+                  women. Under President Muhammadu Buhari the
+                   office has created four programs to address
+                    poverty and help increase economic development. 
+            
+                </p>
+
+            <button id="read-more">Read More</button>
+
+        </div>
+
+        <div class="hero3-img">
+            <img src="../static/images/about-img.webp" alt="">
+        </div>
+    </div>
+
+    <div class="hero4">
+        <div class="hero4-head">
+        <h2>Our Programmes </h2>
+        <p>Our programmes are specifically designed to empower, 
+            train and uplift
+             millions of abandoned Nigerians in every part of the country. </p>
+        </div>
+        <div class="cards">
+            <div class="card1">
+                <div class="img">
+                    <img src="{% static 'images/card1.webp' %}" alt="">
+                </div>
+
+                <div class="text">
+                    <h2>Conditional Cash Transfer (CCT)</h2>
+                <p>
+                    Nigeria's Conditional Cash Transfer program provides 
+                    targeted cash transfers to the most vulnerable households 
+                    with the long-term goal of lifting millions out of poverty. 
+                </p>
+                </div>
+
+                <div class="btn">
+                    <button>Apply Now</button>
+                    <button>Learn More</button>
+                </div>
+
+            </div>
+          
+
+            <div class="card1">
+                <div class="img">
+                    <img src="{% static 'images/card2.webp' %}" alt="">
+                </div>
+
+                <div class="text">
+                    <h2>
+                        Government Enterprise and Empowerment Program (GEEP) </h2>
+                <p>
+                    The Government Enterprise and Empowerment Program was
+                     established to provide financial support and training to
+                      businesses 
+                    and entrepreneurs at the bottom of the financial pyramid.  
+                </p>
+                </div>
+
+                <div class="btn">
+                    <button>Apply Now</button>
+                    <button>Learn More</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div> -->
+
+    <!-- hero -->
+
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+            <!-- carousel-item-1 -->
+        <div class="carousel-item active">
+            
+          <div class="d-flex bg-white ">
+            <div class="d-none d-md-block p-4 w-100">
+                <img src="../static/images/nasims-logo.webp" width="100px" class="my-4" alt="logo.png" id="logo">
+            <h3 style="text-decoration: underline; font-weight:600;">Please note</h3> 
+           <h2 style="font-weight:600;">Registration for N-Power Batch C is now Closed!</h2> 
+           <p style="font-size: 22px;">
+            The central management system for the Federal Ministry of Humanitarian Affairs,
+             Disaster Management and Social Development. <br />
+             <a href="" style="color:green">Read More</a>
+           </p>
+
+          </div>
+                <img src="{% static 'images/hero-image2.webp' %}" class="d-block w-100" style="height: 30rem;" alt="hero.png">
+                <div class="carousel-caption d-block d-md-none">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+
+          
+          </div>
+          </div>
+
+          <!-- carousel-item2 -->
+          <div class="carousel-item">
+          <div class="d-flex bg-white ">
+            <div class="d-none d-md-block p-4 w-100">
+                <img src="../static/images/nasims-logo.webp" alt="logo.png" width="100px" class="my-4" id="logo">
+                <h3 style="text-decoration: underline; font-weight:600;">Welcome to the </h3> 
+                <h2 style="font-weight:600;">The National Social Investment <br /> System (Nasims) Portal</h2> 
+                <p style="font-size: 22px;">
+                The National Social Investment Program of Nigeria
+                is a social welfare initiative created by the 
+                Federal government of Nigeria in 2015 under the 
+                direction of the National Social Investment 
+                Office. <br />
+                <a href="" style="color:green">Read More</a>
+                </p>
+
+          </div>
+                <img src="{% static 'images/hero-image1.webp' %}" class="d-block w-100" style="height: 30rem;" alt="hero.png">
+                <div class="carousel-caption d-block d-md-none">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+
+          
+          </div>
+          </div>
+            <!-- carousel-item3 -->
+            <div class="carousel-item">
+                <div class="d-flex bg-white ">
+                  <div class="d-none d-md-block p-4 w-100">
+                      <img src="../static/images/nasims-logo.webp" alt="logo.png" width="100px" class="my-4" id="logo">
+                      <h3 style="text-decoration: underline; font-weight:600;">Welcome to the </h3> 
+                      <h2 style="font-weight:600;">The National Social Investment <br /> System (Nasims) Portal</h2> 
+                      <p style="font-size: 22px;">
+                      The National Social Investment Program of Nigeria
+                      is a social welfare initiative created by the 
+                      Federal government of Nigeria in 2015 under the 
+                      direction of the National Social Investment 
+                      Office. <br />
+                      <a href="" style="color:green">Read More</a>
+                      </p>
+      
+                </div>
+                      <img src="{% static 'images/hero-image3.webp' %}" class="d-block w-100" style="height: 30rem;" alt="hero.png">
+                      <div class="carousel-caption d-block d-md-none">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                      </div>
+      
+                
+                </div>
+                </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+
+
+      <div class="bg-black text-white p-2 text-center">
+        <p>
+        Read more about our response to the Covid-19 pandemic <a href="" class="text-success"> click here</a>
+        </p>
+    </div>
+
+
+    <!-- hero-2 -->
+
+    
+    <div class="d-block d-md-flex mt-4 mb-4 py-3">
+        <div class="w-100 px-4 text-center">
+            <img src="{% static 'images/Group1.webp' %}" class="w-75" alt="">
+        </div>
+
+        <div class="text-center text-md-start w-100 mt-4">
+            <h4 class="mt-4">Welcome to the National Social
+                 Investment Management System (NASIMS) </h4>
+            <p class="mt-4 pe-md-4">
+            <a href="" class="text-success">The Federal Ministry of Humanitarian Affairs,
+             Disaster Management and Social Development </a>was 
+             established on Wednesday August 21st, 2019 by an Executive
+              pronouncement by the President and Commander in Chief of
+               the Armed Forces of Nigeria, H.E., Muhammadu Buhari GCFR
+                at the inauguration of Ministers for the Federal Republic 
+                of Nigeria. Under My leadership as Minister, the Ministry 
+                will position itself in light of the prevailing Humanitarian 
+                situation in the country through its Vision, Mission and Core
+                 values to promote Human dignity and Integration of basic Humane 
+                 benevolence and compassion in the treatment of all Nigerians
+                </p>
+                <span>Sadiya Umar Farouq
+                    <br />
+                Honorable Minister 
+                </span>
+
+        </div>
+    </div>
+
+    <!-- hero-3 -->
+    <div class="d-flex flex-column-reverse flex-md-row mt-4 py-3">
+
+        <div class="text-center text-md-start w-100 mt-4 p-4">
+            <p class="text-warning">About Us</p>
+            <h4>Providing efficient, effective,
+                 and coordinated humanitarian response to Nigerians. 
+                 </h4>
+            <p>
+                The National Social Investment Program of Nigeria
+                is a social welfare initiative created by the 
+                Federal government of Nigeria in 2015 under the 
+                direction of the National Social Investment 
+                Office. The Program was created to ensure a more
+                 equitable distribution of resources to vulnerable
+                  populations, including children, youth, and
+                  
+                  women. Under President Muhammadu Buhari the
+                   office has created four programs to address
+                    poverty and help increase economic development. 
+            
+                </p>
+
+            <button class="btn btn-success">Read More</button>
+
+        </div>
+
+        <div class="w-100 px-4 text-center">
+            <img src="../static/images/about-img.webp" class="w-75" alt="">
+        </div>
+    </div>
+
+
+    <div class="w-100 bg-info p-4">
+        <div class="w-90 mx-auto text-center p-2">
+        <h2>Our Programmes </h2>
+        <p>Our programmes are specifically designed to empower, 
+            train and uplift
+             millions of abandoned Nigerians in every part of the country. </p>
+        </div>
+        <div class="d-block d-md-flex w-100 justify-content-between">
+            <div class="w-100 bg-white rounded">
+                <div class="w-100">
+                    <img src="{% static 'images/card1.webp' %}" width="100px" height="350px" class="rounded w-100" alt="">
+                </div>
+
+                <div class="w-90 mx-auto py-2 px-2">
+                    <h2 class="text-center text-warning">Conditional Cash Transfer (CCT)</h2>
+                <p class="text-center">
+                    Nigeria's Conditional Cash Transfer program provides 
+                    targeted cash transfers to the most vulnerable households 
+                    with the long-term goal of lifting millions out of poverty. 
+                </p>
+                </div>
+
+                <div class="text-center " style="margin-top:70px">
+                    <button class="btn btn-success">Apply Now</button>
+                    <button class="btn btn-light border-success text-success">Learn More</button>
+                </div>
+
+            </div>
+          
+
+            <div class="w-100 bg-white mt-3 mt-md-0 rounded">
+                <div class="w-100">
+                    <img src="{% static 'images/card2.webp' %}" width="100px" height="350px" class="rounded w-100" alt="">
+                </div>
+
+                <div class="w-90 mx-auto py-2 px-2">
+                    <h2 class="text-center text-warning">
+                        Government Enterprise and Empowerment Program (GEEP) </h2>
+                <p class="text-center">
+                    The Government Enterprise and Empowerment Program was
+                     established to provide financial support and training to
+                      businesses 
+                    and entrepreneurs at the bottom of the financial pyramid.  
+                </p>
+                </div>
+
+                <div class="text-center py-3">
+                    <button class="btn btn-success">Apply Now</button>
+                    <button class="btn btn-light border-success text-success">Learn More</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    {% endblock %}
+    
+</body>
+</html>
